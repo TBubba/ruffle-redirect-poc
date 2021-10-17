@@ -11,7 +11,7 @@ Read the source code for more information (it's short and commented).
 Note: This project does not contain any Flash files. You have to provide one yourself.
 
 0. Install [Node](https://nodejs.org/)
-1. Install dependencies ``npm run i``
+1. Install dependencies ``npm i``
 2. Build the project and run the file server ``npm run serve``
 3. Place your Flash file in the folder ``static``. This is the root folder of the file server
 4. Open the demo in your web browser ``http://localhost:8080/`` (you will require specific seach paramters, see the next section)
