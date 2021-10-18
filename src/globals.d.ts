@@ -11,6 +11,9 @@ type Ruffle = {
 declare interface Window {
   RufflePlayer: {
     newest: () => Ruffle;
+    config: {
+      base?: string | null;
+    };
   };
 }
 
@@ -18,8 +21,7 @@ declare interface Window {
 
 declare interface Window {
   RuffleRedirect?: {
-    fake_root: URL;
-    real_root: URL;
-    original_fetch: typeof window.fetch,
+    redirect_to: URL;
+    original_fetch: typeof fetch;
   };
 }

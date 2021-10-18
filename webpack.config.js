@@ -1,8 +1,11 @@
 var path = require('path');
 
 module.exports = {
-  entry: './src/index.ts',
-  mode: "development",
+  entry: {
+    main: './src/main.ts',
+    redirect: './src/redirect.ts',
+  },
+  mode: 'development',
   module: {
     rules: [
       {
@@ -16,7 +19,7 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js'],
   },
   output: {
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
   devServer: {

@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "author": "Jesper Gustafsson",
-  "main": "src/index.ts",
+  "main": "src/main.ts",
   "private": true,
   "scripts": {
     "build": "webpack",
